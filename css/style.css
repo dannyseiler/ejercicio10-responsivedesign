@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.contenedor,
+.contenedor2 {
+  padding: 10px;
+  gap: 10px;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  background-color: #cccccc;
+}
+
+.contenedor2 {
+  background-color: #2c4fe9;
+  flex-grow: 1;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  body {
+    flex-direction: column-reverse;
+  }
+  div.contenedor {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
